@@ -1,0 +1,68 @@
+# KiCad .gitignore
+# https://github.com/github/gitignore/blob/main/KiCad.gitignore
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_pcb.save
+*.kicad_sch.save
+*.kicad_pcb-bak2
+*.kicad_sch-bak2
+
+# Auto-save files
+_autosave-*
+*.swp
+*.swo
+*~
+
+# Netlist files
+*.net
+
+# Autorouter files
+*.dsn
+*.ses
+
+# Fabrication/gerber files (generated, not source)
+gerber/
+*-gerbers/
+*.gbr
+*.gbo
+*.gbl
+*.gbs
+*.gtl
+*.gts
+*.gbo
+*.gto
+*.gb0
+*.gb1
+*.gt0
+*.gt1
+*.drl
+*.rpt
+
+# BOM files (generated)
+*.xml
+*.csv
+bom/
+
+# 3D model cache
+*.3dl
+# 3D models estan en el repo global libs-kicad, no en este proyecto
+
+# Lock files
+*.lck
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# Opencode local config (user-specific)
+.opencode/config.json

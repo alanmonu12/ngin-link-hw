@@ -1,0 +1,134 @@
+CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+
+
+Preamble
+
+Through this Licence, the CERN seeks to contribute to the Open Hardware community and to promote collaboration, transparency and rapid innovation in the field of hardware design. This Licence allows users to freely copy, modify and distribute the hardware designs made available under its terms, provided that the same licence terms are applied to any modification or derivative work. This approach enables a community-driven model for hardware development, similar to those that have been successful in the software domain.
+
+This Licence is based on the principles established by the CERN Open Hardware Licence version 1.2, but has been significantly restructured and revised to address the needs of the community and clarify areas of ambiguity. It is intended to be used by anyone who wishes to share their hardware designs, including but not limited to individuals, research institutions and commercial entities.
+
+The CERN Open Hardware Licence Version 2 comes in three variants: this is the Strongly Reciprocal variant, which means that any hardware designs based on or incorporating the original design must be made available under the same licence terms. This is analogous to the GNU General Public License (GPL) in the software domain, and is intended to ensure that improvements and modifications are shared with the community.
+
+
+0. DEFINITIONS
+
+In this Licence, the following terms have the following meanings:
+
+"Conditions" means the conditions set out in section 4 of this Licence.
+
+"Compatible Licence" means any licence that is explicitly identified by the CERN as being compatible with this Licence, and which has been approved by the CERN as a result of a review process.
+
+"Derivative Work" means any Hardware Design that is based on or derived from the original Hardware Design, and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship.
+
+"Hardware" means any physical object, including but not limited to electronic devices, mechanical parts, and printed circuit boards, that has been manufactured or produced based on or using a Hardware Design.
+
+"Hardware Design" means the design of any Hardware, including but not limited to schematics, circuit diagrams, layout files, bills of materials, mechanical drawings, and any other documentation necessary for the manufacture or production of the Hardware.
+
+"How to Apply" means the notice specified in section 5 of this Licence, which must be included in or with any Hardware Design distributed under this Licence.
+
+"Licence" means this CERN Open Hardware Licence Version 2 - Strongly Reciprocal.
+
+"Licensor" means the copyright holder of the Hardware Design, or any person or entity authorized by the copyright holder to grant the rights granted under this Licence.
+
+"Modify" means to make any changes to a Hardware Design, including but not limited to changes to the schematics, circuit diagrams, layout files, bills of materials, mechanical drawings, or any other documentation.
+
+"Product" means any Hardware that has been manufactured or produced based on or using a Hardware Design.
+
+"Rights" means the rights granted to you under this Licence.
+
+"Source" means the Hardware Design in the form in which the Licensor makes it available under this Licence, including but not limited to schematics, circuit diagrams, layout files, bills of materials, mechanical drawings, and any other documentation necessary for the manufacture or production of the Hardware.
+
+"You" means any natural or legal person exercising the Rights under this Licence.
+
+"Your" means belonging or relating to You.
+
+
+1. GRANT OF RIGHTS
+
+Subject to the terms and conditions of this Licence, the Licensor hereby grants You a worldwide, royalty-free, non-exclusive licence to:
+
+1.1. Use the Hardware Design for any purpose, including but not limited to the manufacture, production, and distribution of Products;
+
+1.2. Modify the Hardware Design;
+
+1.3. Reproduce the Hardware Design;
+
+1.4. Distribute the Hardware Design; and
+
+1.5. Distribute Products based on or using the Hardware Design.
+
+These rights are granted for the entire term of the copyright in the Hardware Design, or until this Licence is terminated in accordance with section 6.
+
+
+2. LIMITATIONS
+
+The Rights granted under this Licence are subject to the following limitations:
+
+2.1. You may not sublicense the Hardware Design. Any recipient of the Hardware Design from You receives the same Rights under this Licence as You.
+
+2.2. You may not apply legal measures or technological measures that restrict the ability of any recipient of the Hardware Design from You to exercise the Rights granted under this Licence.
+
+2.3. You may not use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Hardware Design.
+
+
+3. CONDITIONS
+
+The Rights granted under this Licence are conditional upon Your compliance with the following conditions:
+
+3.1. You must include a copy of this Licence, or the Uniform Resource Identifier for this Licence, with every copy of the Hardware Design or Product that You distribute.
+
+3.2. You must include the "How to Apply" notice specified in section 5 with every copy of the Hardware Design that You distribute.
+
+3.3. If You Modify the Hardware Design, You must cause the Modified Hardware Design to carry prominent notices stating that You changed the files.
+
+3.4. If You Distribute a Derivative Work, You must make the Source of the Derivative Work available under the terms of this Licence, at no charge, for at least the entire term of the copyright in the Derivative Work.
+
+3.5. If You Distribute a Product, You must make the Source of the Product available under the terms of this Licence, at no charge, for at least the entire term of the copyright in the Product.
+
+
+4. DISCLAIMER
+
+THE HARDWARE DESIGN AND ANY PRODUCTS BASED ON OR USING THE HARDWARE DESIGN ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE LICENSOR OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE HARDWARE DESIGN OR THE USE OR OTHER DEALINGS IN THE HARDWARE DESIGN.
+
+
+5. HOW TO APPLY
+
+To apply this Licence to Your Hardware Design, include the following notice in a prominent location in the Hardware Design:
+
+  Copyright (C) [year] [copyright holder]
+
+  This source describes Open Hardware and is licensed under the CERN-OHL-S v2
+
+  You may redistribute and modify this source and make products using it under
+  the terms of the CERN-OHL-S v2 (https://ohwr.org/cern_ohl_s_v2.txt).
+
+  This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY,
+  INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A
+  PARTICULAR PURPOSE. Please see the CERN-OHL-S v2 for applicable conditions.
+
+
+6. TERMINATION
+
+6.1. This Licence and the Rights granted hereunder will terminate automatically
+upon any breach by You of the Conditions.
+
+6.2. Upon termination, You must immediately cease all exercise of the Rights.
+Termination shall not affect any rights or obligations of any party that have
+arisen prior to termination, nor any claims for damages arising from any breach
+of this Licence.
+
+
+7. MISCELLANEOUS
+
+7.1. This Licence represents the complete agreement concerning the subject
+matter hereof.
+
+7.2. The law of the jurisdiction in which the Licensor is domiciled shall
+govern this Licence, without regard to conflict of law principles.
+
+7.3. If any provision of this Licence is held to be unenforceable, such
+provision shall be reformed only to the extent necessary to make it
+enforceable.
+
+7.4. This Licence shall be construed so as to apply to the full extent of
+the law governing the rights granted hereunder.
