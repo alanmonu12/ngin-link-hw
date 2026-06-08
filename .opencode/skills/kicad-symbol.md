@@ -39,9 +39,11 @@ All symbols must use this header:
     (property "Footprint" "..." ...)
     (property "Datasheet" "..." ...)
     (property "Description" "..." ...)
-    (property "MF" "..." ...)         ← Manufacturer
-    (property "MP" "..." ...)         ← Manufacturer Part Number
-    (property "Package" "..." ...)
+    (property "Manufacturer" "..." ...)
+    (property "Part number" "..." ...)
+    (property "Supplier 1" "..." ...)
+    (property "Supplier 2" "..." ...)
+    ... component-type-specific properties ...
     (symbol "COMPONENT_NAME_1_0"     ← Graphics body
         (rectangle ...)
     )
@@ -71,18 +73,62 @@ Properties must include KiCad 10 fields:
 
 Hidden properties add `(hide yes)` inside `(effects ...)`.
 
-### Required properties
+### Required properties (all symbols)
 
 | Property | Visible | Notes |
 |----------|---------|-------|
-| Reference | Yes | U for ICs, J for connectors, etc. |
+| Reference | Yes | U for ICs, J for connectors, R for resistors, etc. |
 | Value | Yes | Component name (e.g. SN65HVD230) |
 | Footprint | Hidden | Format: `Library_ARR:FootprintName` |
 | Datasheet | Hidden | URL to datasheet PDF |
-| Description | Hidden | Brief description |
-| MF | Hidden | Manufacturer name |
-| MP | Hidden | Manufacturer part number |
-| Package | Hidden | Package name (e.g. SOIC-8 3.9x4.9mm) |
+| Description | Hidden | Brief description with key specs |
+| Manufacturer | Hidden | Full manufacturer name (e.g. "Texas Instruments") |
+| Part number | Hidden | Manufacturer orderable part number (e.g. "SN65HVD230DR") |
+| Package | Hidden | Package designation (e.g. "SOIC-8 3.9x4.9mm") |
+| Supplier 1 | Hidden | URL to supplier page (empty initially, filled later) |
+| Supplier 2 | Hidden | URL to alternative supplier (empty initially, filled later) |
+
+### Component-type-specific properties
+
+Analyze the component type and add relevant technical properties as hidden fields. Always use descriptive names with units where applicable.
+
+**ICs / Transceivers / Regulators:**
+- `Supply voltage` — e.g. "3.3V" or "1.8V to 5.5V"
+- `Temperature` — operating range, e.g. "-40C to 85C"
+
+**Capacitors / Resistors:**
+- `Value` — already in Value field, but add `Tolerance` and `Voltage rating` as hidden properties
+- e.g. `Tolerance`: "1%", `Voltage rating`: "25V"
+
+**Diodes / LEDs:**
+- `Vf` — forward voltage, e.g. "0.7V" or "2.1V"
+- `If` — forward current, e.g. "20mA"
+- `Vr` — reverse voltage for Zener/TVS, e.g. "5.1V"
+
+**Crystals / Oscillators:**
+- `Frequency` — e.g. "8MHz" or "16MHz"
+- `Load capacitance` — e.g. "20pF"
+- `Tolerance` — e.g. "50ppm"
+
+**Connectors:**
+- `Contacts` — number of positions, e.g. "4"
+- `Pitch` — e.g. "2.0mm" or "1.25mm"
+- `Current rating` — e.g. "3A"
+
+**Ferrite beads / Inductors:**
+- `Impedance` — e.g. "600R @ 100MHz"
+- `Current rating` — e.g. "200mA"
+
+**TVS / Protection:**
+- `Vrwm` — working voltage, e.g. "5V" or "3.3V"
+- `Vclamp` — clamping voltage, e.g. "12V"
+
+**MCUs / Processors:**
+- `Core` — e.g. "Cortex-M4F"
+- `Flash` — e.g. "512KB"
+- `RAM` — e.g. "128KB"
+- `Frequency` — e.g. "180MHz"
+- `Supply voltage` — e.g. "1.7V to 3.6V"
 
 ### Pin conventions
 
@@ -134,7 +180,7 @@ Use a single rectangle for the IC body:
 2. If it doesn't exist, create it with the KiCad 10 header
 3. If a matching category doesn't exist, create a new `_ARR` library file
 4. Define the symbol with all pins as `passive`, proper pin numbers, and logical pin placement
-5. Add all required properties (Reference, Value, Footprint, Datasheet, Description, MF, MP, Package)
+5. Add all required properties (Reference, Value, Footprint, Datasheet, Description, Manufacturer, Part number, Package, Supplier 1, Supplier 2) plus component-type-specific properties
 6. Run `kicad-cli sym upgrade <file>` to validate (should say "no se actualizó" if format is correct)
 7. Update `libs-kicad/configuration/sym-lib-table` with new category if needed
 8. Update `~/.config/kicad/10.0/sym-lib-table` with new entry if needed
