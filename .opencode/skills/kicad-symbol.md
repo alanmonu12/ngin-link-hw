@@ -186,14 +186,82 @@ Use a single rectangle for the IC body:
 8. Update `~/.config/kicad/10.0/sym-lib-table` with new entry if needed
 9. Commit and push to `libs-kicad` repo
 
-## Unit naming convention
+## Multi-unit symbols (MCUs, complex ICs)
 
-- `SYMBOL_1_0` for when pins and body are in the same unit
-- `SYMBOL_0_0` for body graphics only (when using separate units)
-- `SYMBOL_1_0` for pins-only unit (when using separate units)
-- For simple ICs (8-pin, etc.), put rectangle and pins all in `_1_1`
+For ICs with many pins (MCUs, processors), use a **multi-unit symbol** to separate signal pins from power pins into independent units (Unit A, Unit B). This makes schematic routing much cleaner.
 
-## Footprint reference format
+### How KiCad unit numbering works
+
+The sub-symbol name format is `SYMBOLNAME_UNIT_CONVERT`:
+
+- **UNIT** determines which unit the element belongs to:
+  - `0` = **common** — shown in ALL units (shared graphics, never pins)
+  - `1` = **Unit A** — signal pins (GPIOs, peripherals)
+  - `2` = **Unit B** — power pins (VDD, GND, VDDA, VCAP)
+  - `3`, `4`, etc. = additional units if needed
+- **CONVERT** determines the body style:
+  - `0` = normal (default)
+  - `1` = De Morgan alternate style (rarely used)
+
+### Required structure for a 2-unit symbol
+
+```
+(kicad_symbol_lib ...
+  (symbol "STM32F446RET6"
+    ... properties ...
+    (symbol "STM32F446RET6_0_0"     ← COMMON: shared graphics only
+      (rectangle ...)                ← body rectangle (appears in ALL units)
+      NO PINS HERE
+    )
+    (symbol "STM32F446RET6_1_0"     ← UNIT A: signal pins (no graphics)
+      (pin passive line ... NRST)
+      (pin passive line ... PA0)
+      ... all GPIO/signal pins ...
+    )
+    (symbol "STM32F446RET6_2_0"     ← UNIT B: power pins + own rectangle
+      (rectangle ...)                ← body rectangle for power unit
+      (pin passive line ... VDD)
+      (pin passive line ... VSS)
+      ... all power pins ...
+    )
+    (embedded_fonts no)
+  )
+)
+```
+
+### Critical rules for multi-unit symbols
+
+1. **Unit 0 (`_0_0`) must NEVER contain pins** — only shared graphics (rectangle). Pins in unit 0 appear in every unit, which causes duplicate pin errors.
+
+2. **Each unit > 0 must have its own body rectangle** — Units without a rectangle will display as just floating pins. Either:
+   - Put the rectangle in `_0_0` (common, appears in all units), OR
+   - Put the rectangle in each unit's sub-symbol (`_2_0` for Unit B)
+
+3. **Every pin number must appear exactly once** across all units. Never duplicate pin numbers between units.
+
+4. **Signal pins go in Unit 1 (`_1_0`)**, **Power pins go in Unit 2 (`_2_0`)**.
+
+5. **For simple ICs (transceivers, regulators, etc.)**: Use a single-unit symbol with `_1_0` containing both rectangle and pins. No need for multi-unit.
+
+### Simple IC (single unit) structure
+
+```
+(symbol "SN65HVD230"
+  ... properties ...
+  (symbol "SN65HVD230_1_0"   ← Unit 1: rectangle + all pins
+    (rectangle ...)
+    (pin ... D)
+    (pin ... GND)
+    (pin ... VCC)
+    ...
+  )
+  (embedded_fonts no)
+)
+```
+
+For simple ICs, `_1_0` is fine — just one unit with graphics and pins together.
+
+### Footprint reference format
 
 Use the global library naming: `Package_SO_ARR:SOIC-8_3.9x4.9mm_P1.27mm`
 
