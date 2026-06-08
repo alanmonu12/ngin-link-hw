@@ -2,7 +2,7 @@
 
 ## Proyecto
 
-**ngin-link-hw** es un dongle USB-CAN basado en STM32F446CET6 (LQFP-48) con firmware en Rust.
+**ngin-link-hw** es un dongle USB-CAN basado en STM32F446RET6 (LQFP-64) con firmware en Rust.
 
 ## Herramientas
 
@@ -74,7 +74,7 @@ libs-kicad/
 
 ## Arquitectura de hardware (resumen)
 
-- **MCU**: STM32F446CET6 LQFP-48, Cortex-M4F @ 180 MHz, 512 KB Flash, 128 KB SRAM
+- **MCU**: STM32F446RET6 LQFP-64, Cortex-M4F @ 180 MHz, 512 KB Flash, 128 KB SRAM
 - **CAN Transceiver**: SN65HVD230 (CAN 2.0B, 3.3V logic)
 - **LDO**: AP2112K-3.3 (VBUS 5V -> 3.3V)
 - **USB**: USB-C 2.0, Full-Speed (PA11/PA12)
@@ -104,7 +104,7 @@ Los archivos KiCad usan S-expressions. Ejemplo de estructura minima de un simbol
 (kicad_symbol_lib
   (version 20250114)
   (generator "symbol_editor")
-  (symbol "STM32F446CET6"
+  (symbol "STM32F446RET6"
     (pin power_in line (at 0 0 0) (length 2.54)
       (name "VDD") (number "1")
     )

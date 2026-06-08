@@ -2,7 +2,7 @@
 
 [![License: CERN-OHL-S v2](https://img.shields.io/badge/license-CERN--OHL--S%20v2-blue)](LICENSE)
 [![KiCad](https://img.shields.io/badge/KiCad-10.x-blue)](https://www.kicad.org)
-[![MCU](https://img.shields.io/badge/MCU-STM32F446CET6-informational)](https://www.st.com/en/microcontrollers/stm32f446.html)
+[![MCU](https://img.shields.io/badge/MCU-STM32F446RET6-informational)](https://www.st.com/en/microcontrollers/stm32f446.html)
 [![Firmware](https://img.shields.io/badge/firmware-Rust%20%F0%9F%A6%80-orange)](https://www.rust-lang.org)
 [![CAN](https://img.shields.io/badge/bus-CAN%202.0B%20up%20to%201Mbps-green)](#)
 [![USB](https://img.shields.io/badge/connector-USB--C%202.0%20FS-green)](#)
@@ -12,7 +12,7 @@ USB-CAN dongle basado en STM32F446 con firmware en Rust.
 
 ## Descripcion
 
-ngin-link es un adaptador USB-CAN compacto que permite la comunicacion entre un host USB y un bus CAN. El cerebro del sistema es un STM32F446CET6 (Cortex-M4F @ 180 MHz) ejecutando firmware escrito en Rust (embbeded).
+ngin-link es un adaptador USB-CAN compacto que permite la comunicacion entre un host USB y un bus CAN. El cerebro del sistema es un STM32F446RET6 (Cortex-M4F @ 180 MHz) ejecutando firmware escrito en Rust (embbeded).
 
 ## Arquitectura de Hardware
 
@@ -20,7 +20,7 @@ ngin-link es un adaptador USB-CAN compacto que permite la comunicacion entre un 
                     +-----------------------+
    USB-C ---------> | VBUS -> LDO (3.3V)    |----> VCC
                     |                       |
-                    |  STM32F446CET6        |
+                    |  STM32F446RET6        |
    USB D+/D- <----> |  PA12 (DP)           |
                     |  PA11 (DM)            |
                     |                       |
@@ -39,7 +39,7 @@ ngin-link es un adaptador USB-CAN compacto que permite la comunicacion entre un 
 
 | Componente | Referencia | Notas |
 |---|---|---|
-| MCU | STM32F446CET6 | LQFP-48, Cortex-M4F 180 MHz, 512 KB Flash, 128 KB SRAM |
+| MCU | STM32F446RET6 | LQFP-64, Cortex-M4F 180 MHz, 512 KB Flash, 128 KB SRAM |
 | CAN Transceiver | SN65HVD230 | CAN 2.0B, 3.3V logic, hasta 1 Mbps |
 | Regulador | AP2112K-3.3 | LDO 3.3V 600 mA, SOT-223 |
 | Conector USB | USB-C 2.0 | Receptaculo SMD, solo USB 2.0 FS |
@@ -58,7 +58,7 @@ ngin-link es un adaptador USB-CAN compacto que permite la comunicacion entre un 
 - **Filtro CAN**: Common-mode choke en CANH/CANL
 - **PCB**: 4 capas, 1.6 mm, tamaño objetivo ~50x20 mm (formato dongle), control de impedancia en USB y CAN
 
-### Mapa de pines (STM32F446CET6 LQFP-48)
+### Mapa de pines (STM32F446RET6 LQFP-64)
 
 | Pin | Funcion | Uso |
 |---|---|---|
