@@ -11,6 +11,7 @@
 *.kicad_sch.save
 *.kicad_pcb-bak2
 *.kicad_sch-bak2
+.history
 
 # Auto-save files
 _autosave-*
@@ -54,6 +55,9 @@ bom/
 
 # Lock files
 *.lck
+
+# KiCad project local file (per-user UI state, regenerated on open)
+*.kicad_prl
 
 # OS files
 .DS_Store

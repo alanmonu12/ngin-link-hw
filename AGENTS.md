@@ -77,6 +77,8 @@ libs-kicad/
 - **MCU**: STM32F446RET6 LQFP-64, Cortex-M4F @ 180 MHz, 512 KB Flash, 128 KB SRAM
 - **CAN Transceiver**: SN65HVD230 (CAN 2.0B, 3.3V logic)
 - **LDO**: AP2112K-3.3 (VBUS 5V -> 3.3V)
+- **DC-DC aislado**: B0505S (5V/5V, 1W) — aislacion galv. entre VBUS y bus CAN
+- **Aislador digital**: ADUM1201 (propuesto, dual-channel, SOIC-8) en CAN TX/RX entre MCU y transceiver
 - **USB**: USB-C 2.0, Full-Speed (PA11/PA12)
 - **CAN**: CAN1 en PB8 (RX) / PB9 (TX)
 - **LEDs**: PB0 (status, active-low), PB1 (error, active-low)

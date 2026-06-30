@@ -1,0 +1,309 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "ffa43fa8-9ecd-4170-acdd-c7834d091f01")
+	(paper "A4")
+	(title_block
+		(title "Ngin-link USB to CAN dongle")
+		(date "2026-06-28")
+		(rev "A")
+		(company "Ngin performance")
+		(comment 1 "Sheet: CAN Transceiver")
+		(comment 2 "Page 6/8")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 139.238 95.08)
+		(end 254.238 135.08)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "8519bd22-6837-4cc4-ab0f-e86bd960a5b6")
+	)
+	(rectangle
+		(start 139.238 40.08)
+		(end 254.238 85.08)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e1dc9c2f-8210-46e1-8265-6c10071ce458")
+	)
+	(rectangle
+		(start 18.048 39.37)
+		(end 133.048 106.19)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f8421e5e-6575-46ef-9111-73ea51b356b9")
+	)
+	(rectangle
+		(start 18.048 116.19)
+		(end 133.048 161.19)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "fdaf5ceb-7f7c-4ad7-804c-4458560a1c83")
+	)
+	(text "D3/D4: TVS (SMBJ24CA)"
+		(exclude_from_sim no)
+		(at 196.238 63.08 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d97945a-b66a-464f-b77f-e0945b801466")
+	)
+	(text "D pin: dominant timeout"
+		(exclude_from_sim no)
+		(at 58.42 84.07 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c5e8508-dd27-4a85-a29b-9165d119e452")
+	)
+	(text "CAN 2.0B, 3.3V logic"
+		(exclude_from_sim no)
+		(at 58.42 68.07 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "37abfed8-0db0-4d98-b6f0-011d671fcffe")
+	)
+	(text "SN65HVD230 CAN transceiver with TVS protection,"
+		(exclude_from_sim no)
+		(at 17.018 27.94 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f0ccfa8-960f-4e42-8571-fdcad95b80f2")
+	)
+	(text "CAN Transceiver"
+		(exclude_from_sim no)
+		(at 14.986 24.13 0)
+		(effects
+			(font
+				(size 8 8)
+				(thickness 1.6)
+				(bold yes)
+				(color 255 113 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "44233aa5-af3a-478f-8f30-d6142617977d")
+	)
+	(text "common-mode choke and selectable 120R bus termination."
+		(exclude_from_sim no)
+		(at 17.018 31.94 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "45cc0e89-e0e2-4d75-8cbf-e73a49308cb4")
+	)
+	(text "CANH, CANL, GND"
+		(exclude_from_sim no)
+		(at 75.048 144.19 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ff3cd74-6ba6-42b7-900d-3e3e761b8277")
+	)
+	(text "FB2/FB3: common-mode choke"
+		(exclude_from_sim no)
+		(at 196.238 71.08 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "532ada26-b6c2-497a-b82f-fe902d5fcc03")
+	)
+	(text "SN65HVD230 (U4)"
+		(exclude_from_sim no)
+		(at 58.42 52.07 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "55ead19d-af66-45e2-ad33-b70cfd82246f")
+	)
+	(text "100nF on VCC"
+		(exclude_from_sim no)
+		(at 58.42 100.07 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "62e6dd95-5dac-47f4-b641-7aaf353ed77e")
+	)
+	(text "Optional: PTC F2"
+		(exclude_from_sim no)
+		(at 196.238 79.08 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a40f2cc-d37e-4971-a9f6-baa5c45af3c6")
+	)
+	(text "Note: CAN Transceiver is a placeholder. Add components, wires and labels using the KiCad schematic editor.\nAislador digital CAN <-> MCU: ADUM1201 (dual-channel digital isolator, SOIC-8)."
+		(exclude_from_sim no)
+		(at 38.608 173.736 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "795ec042-d385-4bf7-a6f2-3fa26687d4a9")
+	)
+	(text "R4: 120R between CANH/CANL"
+		(exclude_from_sim no)
+		(at 196.238 113.08 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f871a7a-3590-4134-a632-0f6f8ff40f16")
+	)
+	(text "J2: 4-pin header"
+		(exclude_from_sim no)
+		(at 75.048 136.19 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fe3d2e6-9527-43cd-82fe-c24a032d09cf")
+	)
+	(text "Up to 1 Mbps"
+		(exclude_from_sim no)
+		(at 58.42 76.07 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "9bfd8970-a0cc-4493-b1cf-94ada1f2d6ba")
+	)
+	(text "Connector"
+		(exclude_from_sim no)
+		(at 75.048 128.19 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e1d97fe-c795-43a1-b62d-96be305cae38")
+	)
+	(text "Bus Protection"
+		(exclude_from_sim no)
+		(at 196.238 55.08 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f32a587-2923-483a-8383-9c7c7a76954a")
+	)
+	(text "SOIC-8 package"
+		(exclude_from_sim no)
+		(at 58.42 60.07 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae8273b4-6632-4b90-b5c2-6708c172d415")
+	)
+	(text "Rs pin: slope control"
+		(exclude_from_sim no)
+		(at 58.42 92.07 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb71e50d-4a6e-4f1f-bf97-e9b1349cdaa8")
+	)
+	(text "Place at end of bus"
+		(exclude_from_sim no)
+		(at 196.238 129.08 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "d069f445-f0c3-45ca-8cfb-7f8bf8c4e6d4")
+	)
+	(text "Jumper JP1 or 0R (selectable)"
+		(exclude_from_sim no)
+		(at 196.238 121.08 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4e9e81b-fe08-4357-909a-7b12db9182a1")
+	)
+	(text "Termination"
+		(exclude_from_sim no)
+		(at 196.238 105.08 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "e45a05b6-249c-4d46-a62c-30d75a47fdab")
+	)
+)

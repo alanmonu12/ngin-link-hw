@@ -1,0 +1,241 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "0a6612dc-bd79-4854-ae97-c275e63dfa6e")
+	(paper "A4")
+	(title_block
+		(title "Ngin-link USB to CAN dongle")
+		(date "2026-06-28")
+		(rev "A")
+		(company "Ngin performance")
+		(comment 1 "Sheet: Power 3.3V")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 140 35)
+		(end 255 105)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5d878a39-9801-4a52-8c15-dad62ceba843")
+	)
+	(rectangle
+		(start 15 35)
+		(end 130 105)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "71784462-1b78-4732-a36a-75919edf7f7a")
+	)
+	(rectangle
+		(start 15 115)
+		(end 255 160)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "831fbedd-f3f7-4a09-b64c-923690488b52")
+	)
+	(text "Cin: 1uF X5R 10V"
+		(exclude_from_sim no)
+		(at 59.182 83.038 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "141815ef-ee9c-4052-b04f-d04b23f68c21")
+	)
+	(text "Input Filter"
+		(exclude_from_sim no)
+		(at 197.358 48.26 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "3460f896-3cbf-4116-ba7e-469940b87bea")
+	)
+	(text "4.7uF tantalum or ceramic (C3)"
+		(exclude_from_sim no)
+		(at 135 138 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c6a8b34-6bac-4fc6-bd19-45a6dcfb283b")
+	)
+	(text "Reverse protection via Schottky (optional)\n"
+		(exclude_from_sim no)
+		(at 197.358 80.26 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "42175d5d-459c-4e67-bd9b-7351d45d6d4d")
+	)
+	(text "AP2112K-3.3 LDO (U1)"
+		(exclude_from_sim no)
+		(at 59.182 50.038 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "53054377-3100-4191-bfdc-db2fec8e0fad")
+	)
+	(text "Note: Power is a placeholder. Add components, wires and labels using the KiCad schematic editor.\nAislacion galv. USB <-> CAN bus: B0505S (DC-DC aislado 5V/5V, 1W, SIP/DIP)."
+		(exclude_from_sim no)
+		(at 16.002 164.846 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "546a0c23-d082-4b0d-bbfb-bc1dceda4089")
+	)
+	(text "Output Bulk Decoupling"
+		(exclude_from_sim no)
+		(at 135 130 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "5cc8bf23-9d3f-4140-b950-bb3edf9f4317")
+	)
+	(text "SOT-23-5 package"
+		(exclude_from_sim no)
+		(at 59.182 58.038 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "76ea34e1-bd7c-45da-bb43-51e7cba3478b")
+	)
+	(text "Vin: 5V from USB"
+		(exclude_from_sim no)
+		(at 59.182 67.038 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "79645d86-87d6-4253-8d24-cecefa19d428")
+	)
+	(text "Vout: 3.3V, 600mA max"
+		(exclude_from_sim no)
+		(at 59.182 75.038 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "8df6fec5-9efb-4e57-a414-6787162969e3")
+	)
+	(text "Cout: 1uF X5R 10V"
+		(exclude_from_sim no)
+		(at 59.182 91.038 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e0843b9-2509-4d29-96f4-ce545f3f4ec0")
+	)
+	(text "Power"
+		(exclude_from_sim no)
+		(at 16.002 24.892 0)
+		(effects
+			(font
+				(size 8 8)
+				(thickness 1.6)
+				(bold yes)
+				(color 255 113 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a36f09d0-687a-422e-95a8-80d7987ff0df")
+	)
+	(text "VBUS (5V) to +3V3 regulation with input/output filtering and isolated 5V supply (B0505S) for CAN bus."
+		(exclude_from_sim no)
+		(at 18.542 28.448 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "a52836a2-a51c-4738-8cf5-9fd8183cefd0")
+	)
+	(text "C1: 10uF bulk on VBUS"
+		(exclude_from_sim no)
+		(at 197.358 64.26 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1001eb0-af2c-448b-a292-bab0f03a82c1")
+	)
+	(text "C2: 100nF HF bypass"
+		(exclude_from_sim no)
+		(at 197.358 72.26 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1c83ba6-7485-4895-b6b3-b4b23ee48807")
+	)
+	(text "FB1: ferrite bead"
+		(exclude_from_sim no)
+		(at 197.358 56.26 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "dcc7d38e-ddcd-49e7-9a34-710429124dbc")
+	)
+	(text "100nF X7R near MCU (C4)"
+		(exclude_from_sim no)
+		(at 135 146 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1b77493-f2ee-427b-8b6c-1029b51684c1")
+	)
+)

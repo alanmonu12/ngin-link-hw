@@ -1,0 +1,353 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "57a95ba9-b8ef-48b6-b7f7-8662ca1c8f50")
+	(paper "A4")
+	(title_block
+		(title "Ngin-link USB to CAN dongle")
+		(date "2026-06-28")
+		(rev "A")
+		(company "Ngin performance")
+		(comment 1 "Sheet: MCU STM32F446")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 15.89 132.32)
+		(end 69.85 160.02)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "181fa21b-edbd-4736-9b64-9eec86606ac7")
+	)
+	(rectangle
+		(start 140 100)
+		(end 215.9 130)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1f97d3a5-9440-4d67-b5d6-52eff0a76235")
+	)
+	(rectangle
+		(start 15 39.37)
+		(end 130 130)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "61f6f10e-482d-4578-a955-435829dacf64")
+	)
+	(rectangle
+		(start 73.66 132.08)
+		(end 127.62 159.78)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b0fe794d-2f88-43ec-aece-1a35e286040c")
+	)
+	(rectangle
+		(start 140 40.64)
+		(end 215.9 90)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c9e0a678-f50a-45ab-9b0b-933e22dcd8bd")
+	)
+	(text "512KB Flash, 128KB SRAM"
+		(exclude_from_sim no)
+		(at 59.182 71.752 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "13e67f7e-108b-45c4-9eda-2b855d8e027e")
+	)
+	(text "8 MHz HSE Crystal (Y1)"
+		(exclude_from_sim no)
+		(at 170.434 48.768 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "1fb45b9f-f449-4711-876a-5b9e3634d060")
+	)
+	(text "R3: 10k NRST to +3V3"
+		(exclude_from_sim no)
+		(at 149.86 116.458 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "3887ff91-e539-4904-aa06-0c1702c92690")
+	)
+	(text "LQFP-64"
+		(exclude_from_sim no)
+		(at 59.182 55.752 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "4de43c71-2e89-451d-8b48-1c265ee983e8")
+	)
+	(text "Decoupling"
+		(exclude_from_sim no)
+		(at 30.226 141.986 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "52180e18-4c4a-42f5-a8e1-840a63510a83")
+	)
+	(text "STM32F446RET6 (U3)"
+		(exclude_from_sim no)
+		(at 59.182 47.752 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "549e0823-f3bf-4a55-ae3a-27030ec43e43")
+	)
+	(text "Place near OSC_IN/OUT"
+		(exclude_from_sim no)
+		(at 170.434 72.768 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "571dc4eb-7f90-4531-906b-1dbf33fa3a2f")
+	)
+	(text "PB0/PB1: LEDs"
+		(exclude_from_sim no)
+		(at 59.182 95.752 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6235a9a4-43da-417e-803a-e90c47d2deb1")
+	)
+	(text "PA11/PA12: USB"
+		(exclude_from_sim no)
+		(at 59.182 79.752 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "69f5217a-a6fe-441a-8f50-b337afbfb91f")
+	)
+	(text "Note: MCU STM32F446 is a placeholder. Add components, wires and labels using the KiCad schematic editor."
+		(exclude_from_sim no)
+		(at 14.986 166.37 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a4811a4-d980-4c90-afb2-9489570c87d4")
+	)
+	(text "MCU STM32F446"
+		(exclude_from_sim no)
+		(at 14.732 25.4 0)
+		(effects
+			(font
+				(size 8 8)
+				(thickness 1.6)
+				(bold yes)
+				(color 255 113 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d7b5261-1b78-4d01-b454-577c9e0053d8")
+	)
+	(text "PB8/PB9: CAN1"
+		(exclude_from_sim no)
+		(at 59.182 87.752 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c938653-b70a-4008-a6c9-766c86751238")
+	)
+	(text "ABM8G-8.000MHZ"
+		(exclude_from_sim no)
+		(at 170.434 56.768 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "981a52e8-54d5-4b38-b6a0-07f3fd2c837a")
+	)
+	(text "LEDs"
+		(exclude_from_sim no)
+		(at 87.996 141.746 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "affb3e2f-284e-497f-8b0e-07cdcb6f1fd3")
+	)
+	(text "C7: 100nF NRST to GND"
+		(exclude_from_sim no)
+		(at 149.86 122.458 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6d60ffb-4468-49fd-8eef-9deceb756c3b")
+	)
+	(text "Cortex-M4F @ 180 MHz"
+		(exclude_from_sim no)
+		(at 59.182 63.752 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "c28e340b-3bf5-4f71-a80e-8f2798c200a7")
+	)
+	(text "USB on PA11/PA12, CAN1 on PB8/PB9, LEDs on PB0/PB1, SWD on PA13/PA14."
+		(exclude_from_sim no)
+		(at 16.51 32.766 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6b4248d-8782-4f7d-b17a-5af6f1095862")
+	)
+	(text "PA13/PA14: SWD"
+		(exclude_from_sim no)
+		(at 59.182 103.752 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9be5777-9cb8-4f6e-899f-bf7d2663a765")
+	)
+	(text "2x led\n\nResistors"
+		(exclude_from_sim no)
+		(at 87.996 149.746 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9c0d2d9-f2b8-4337-9574-7601f628a063")
+	)
+	(text "8x 100nF 0402 (one per VDD pair)"
+		(exclude_from_sim no)
+		(at 30.226 149.986 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2e0541e-8a91-4610-b1a1-e5d0bbc571e0")
+	)
+	(text "Load caps C5, C6: 12pF"
+		(exclude_from_sim no)
+		(at 170.434 64.768 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "d62be85d-a89a-400d-9acd-3255edc11fc3")
+	)
+	(text "Main microcontroller. 8 MHz HSE crystal, NRST reset, BOOT0 config."
+		(exclude_from_sim no)
+		(at 16.51 28.766 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "d844b313-cd17-4367-b7c4-292eada306c7")
+	)
+	(text "VDD/VBAT/VDDA: 100nF+4.7uF"
+		(exclude_from_sim no)
+		(at 59.182 119.752 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc6ef4f2-8ba7-4af7-b8fb-d55e74418737")
+	)
+	(text "Reset Circuit"
+		(exclude_from_sim no)
+		(at 149.86 108.458 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1109e00-0c65-4e94-9405-1fd796a200d4")
+	)
+	(text "BOOT0: 10k to GND"
+		(exclude_from_sim no)
+		(at 59.182 111.752 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "e239479d-5297-43d4-b22a-6c19a31c7567")
+	)
+)

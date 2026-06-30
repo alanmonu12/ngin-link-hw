@@ -1,0 +1,446 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "3faa6076-89cd-444e-a2d6-7fe39fef8c69")
+	(paper "A4")
+	(title_block
+		(title "Ngin-link USB to CAN dongle")
+		(date "2026-06-28")
+		(rev "A")
+		(company "Ngin performance")
+		(comment 1 "Sheet: Block Diagram")
+	)
+	(lib_symbols)
+	(text "CAN Transceiver"
+		(exclude_from_sim no)
+		(at 204.216 97.028 0)
+		(effects
+			(font
+				(size 2.2 2.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "05513fd3-722a-4249-a45e-2b1d8a8298a9")
+	)
+	(text "USB 2.0 FS receptacle"
+		(exclude_from_sim no)
+		(at 72.898 122.682 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "05ecd268-62c6-4552-a14b-53e4684c3120")
+	)
+	(text "CAN_TX/RX"
+		(exclude_from_sim no)
+		(at 180.34 93.98 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "0981253c-10e2-4710-8b60-397f1eafc0fb")
+	)
+	(text "Top-level functional view. Each block corresponds to a child schematic."
+		(exclude_from_sim no)
+		(at 18.034 28.702 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "14c64f3d-1767-4e4a-a58a-4044ab310bd8")
+	)
+	(text "ESD array"
+		(exclude_from_sim no)
+		(at 72.898 126.182 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "4337207c-5f16-4b79-b1f8-c0f3041b6d97")
+	)
+	(text "NRST + 100nF + 10k"
+		(exclude_from_sim no)
+		(at 139.192 135.58 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "635ce63f-8fdf-4c37-8e98-a0c85acceee2")
+	)
+	(text "Per-pin decoupling"
+		(exclude_from_sim no)
+		(at 139.192 139.08 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "663ad65a-e664-4943-9ade-c37ba1052a96")
+	)
+	(text "8 MHz HSE crystal"
+		(exclude_from_sim no)
+		(at 139.192 132.08 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6688107b-203e-4593-9649-9da2e3bf61b9")
+	)
+	(text "STM32F446RET6 LQFP-64"
+		(exclude_from_sim no)
+		(at 138.938 129.54 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b3e5b16-eb9c-461a-a7a1-ea437dd8178f")
+	)
+	(text "BLOCK DIAGRAM"
+		(exclude_from_sim no)
+		(at 15.748 25.146 0)
+		(effects
+			(font
+				(size 8 8)
+				(thickness 1.6)
+				(bold yes)
+				(color 255 113 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ba37681-6861-4229-ab88-b76d31a99f45")
+	)
+	(text "SN65HVD230"
+		(exclude_from_sim no)
+		(at 203.454 102.362 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "86493d99-c6db-4fe2-b2fd-2b1ca217ce96")
+	)
+	(text "USB-C"
+		(exclude_from_sim no)
+		(at 73.152 118.11 0)
+		(effects
+			(font
+				(size 2.2 2.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "9737d6b0-ab0a-4d3a-8816-e8bb2e29f8a5")
+	)
+	(text "TVS on CANH/CANL"
+		(exclude_from_sim no)
+		(at 203.454 105.862 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a047adb-ddea-49c9-8efb-b380d4556b8a")
+	)
+	(text "DM/DP"
+		(exclude_from_sim no)
+		(at 117.094 106.426 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d44e980-adc6-41f0-bab6-eacece9912e5")
+	)
+	(text "120R termination"
+		(exclude_from_sim no)
+		(at 203.454 112.862 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f17bb53-fe8c-425d-89c8-4b04bdd40c21")
+	)
+	(text "Common-mode choke"
+		(exclude_from_sim no)
+		(at 203.454 109.362 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "a77c25d3-8c2e-45cd-a513-4b8f371293d2")
+	)
+	(text "MCU STM32F446"
+		(exclude_from_sim no)
+		(at 140.208 92.202 0)
+		(effects
+			(font
+				(size 2.2 2.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "abd8ef10-2e60-48ef-9109-cd412a44181d")
+	)
+	(text "PTC on VBUS"
+		(exclude_from_sim no)
+		(at 72.898 129.682 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "afee5727-f717-4925-9d8b-6abdd17f04a6")
+	)
+	(text "CC 5.1k pull-downs"
+		(exclude_from_sim no)
+		(at 72.898 133.182 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7fc128a-e7d2-4f43-851b-c566f2a9a05d")
+	)
+	(text "Legend:  --- conceptual connection (signal name). Hierarchical pins are defined in each child sheet."
+		(exclude_from_sim no)
+		(at 43.688 187.96 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec55bdf2-212d-4cdc-8954-4f19b3ca7f74")
+	)
+	(polyline
+		(pts
+			(xy 168.91 90.17) (xy 203.2 90.17)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+		)
+		(uuid "19eae808-e9db-46ce-983d-f641855709f2")
+	)
+	(polyline
+		(pts
+			(xy 105.41 107.95) (xy 138.43 107.95)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+		)
+		(uuid "94fcebbe-1243-45c3-957b-c91a3e5cec94")
+	)
+	(sheet
+		(at 138.43 59.69)
+		(size 30.48 67.31)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9deffbde-e75b-47d3-ba77-ea2b357df710")
+		(property "Sheetname" "30_mcu.kicad_sch"
+			(at 138.43 58.9784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "${KIPRJMOD}/sch/30_mcu.kicad_sch"
+			(at 138.43 127.5846 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ngin-link-hw"
+				(path "/cd56cd7c-920d-4118-a215-a0bd82f5073a/7c065db8-f7ad-4389-8ca3-c4edf2af20b1"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 77.47)
+		(size 31.75 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a47c0c0f-862f-49c5-88b8-fd6cd44c3501")
+		(property "Sheetname" "40_can.kicad_sch"
+			(at 203.2 76.7584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "${KIPRJMOD}/sch/40_can.kicad_sch"
+			(at 203.2 99.6446 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ngin-link-hw"
+				(path "/cd56cd7c-920d-4118-a215-a0bd82f5073a/7c065db8-f7ad-4389-8ca3-c4edf2af20b1"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 46.99 48.26)
+		(size 30.48 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a6324b31-e295-4938-89bc-7363b3742e99")
+		(property "Sheetname" "20_power.kicad_sch"
+			(at 46.99 47.5484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "${KIPRJMOD}/sch/20_power.kicad_sch"
+			(at 46.99 67.8946 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ngin-link-hw"
+				(path "/cd56cd7c-920d-4118-a215-a0bd82f5073a/7c065db8-f7ad-4389-8ca3-c4edf2af20b1"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 72.39 93.98)
+		(size 33.02 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ca700731-e599-4831-ba91-f913d0ecc30b")
+		(property "Sheetname" "10_usb.kicad_sch"
+			(at 72.39 93.2684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "${KIPRJMOD}/sch/10_usb.kicad_sch"
+			(at 72.39 119.9646 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ngin-link-hw"
+				(path "/cd56cd7c-920d-4118-a215-a0bd82f5073a/7c065db8-f7ad-4389-8ca3-c4edf2af20b1"
+					(page "2")
+				)
+			)
+		)
+	)
+)

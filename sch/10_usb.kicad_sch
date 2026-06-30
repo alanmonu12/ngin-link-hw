@@ -1,0 +1,275 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "fe5b9377-9873-4ade-bddd-fbb691fd3d24")
+	(paper "A4")
+	(title_block
+		(title "Ngin-link USB to CAN dongle")
+		(date "2026-06-28")
+		(rev "A")
+		(company "Ngin performance")
+		(comment 1 "Sheet: USB-C")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 15 100)
+		(end 130 155)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "04f76afb-b724-401f-b466-9f89a20cec99")
+	)
+	(rectangle
+		(start 140 100)
+		(end 255 155)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0f9af453-75f3-4275-bcc1-d8f479632114")
+	)
+	(rectangle
+		(start 140 35)
+		(end 255 90)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "29c07ba0-911f-4a7f-9366-322f0c0b5c01")
+	)
+	(rectangle
+		(start 15 35)
+		(end 130 90)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "cc2da595-3ed9-453c-bf67-72c343aa63aa")
+	)
+	(text "USB-C"
+		(exclude_from_sim no)
+		(at 14.986 24.638 0)
+		(effects
+			(font
+				(size 8 8)
+				(thickness 1.6)
+				(bold yes)
+				(color 255 113 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "002a1b8e-a8df-4c04-8daf-9f314257956b")
+	)
+	(text "VBUS, GND, D+, D-, CC1, CC2"
+		(exclude_from_sim no)
+		(at 56.388 65.292 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "2487fe32-aa9e-4677-8f89-3a47cddbc9a2")
+	)
+	(text "Configures as UFP / Device"
+		(exclude_from_sim no)
+		(at 186.182 130.808 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "303bfb7a-c458-4291-811d-d5d504969d60")
+	)
+	(text "USBLC6-2SC6 or similar"
+		(exclude_from_sim no)
+		(at 184.658 57.8 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "432264af-e4d9-4838-933f-0647b609fd00")
+	)
+	(text "R1, R2: 5.1k to GND"
+		(exclude_from_sim no)
+		(at 186.182 122.808 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "478750c5-7dd8-4293-9f8b-172159179bf5")
+	)
+	(text "D1: TVS SMBJ5.0A"
+		(exclude_from_sim no)
+		(at 56.134 134.872 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d3469f3-aaa7-483f-94f3-f918cb41cec0")
+	)
+	(text "CC lines need 5.1k to GND"
+		(exclude_from_sim no)
+		(at 56.388 73.292 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "78262885-6884-40c6-8959-3e3668ee7e21")
+	)
+	(text "VBUS Protection"
+		(exclude_from_sim no)
+		(at 56.134 118.872 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d0e9d3b-396f-48d0-9ba2-2aa83830112e")
+	)
+	(text "CC Pull-downs"
+		(exclude_from_sim no)
+		(at 186.182 114.808 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e78f756-a0f1-4018-a98f-82f39fdf41f5")
+	)
+	(text "CC1 to CC1, CC2 to CC2"
+		(exclude_from_sim no)
+		(at 186.182 138.808 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c412312-da62-4e0c-a60f-ca8a6966ce72")
+	)
+	(text "Note: USB-C is a placeholder. Add components, wires and labels using the KiCad schematic editor."
+		(exclude_from_sim no)
+		(at 17.018 160.528 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae56cf6f-8aee-49e2-a6cf-7922343abbf8")
+	)
+	(text "15 kV ESD rating"
+		(exclude_from_sim no)
+		(at 184.658 73.8 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbd5b85a-9cc6-4078-a73b-617171ce04d2")
+	)
+	(text "F1: PTC 0.5A resettable"
+		(exclude_from_sim no)
+		(at 56.134 126.872 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd68c011-475e-4880-b340-6d12a7d51c0c")
+	)
+	(text "USB 2.0 FS input, ESD protection, VBUS protection, CC configuration"
+		(exclude_from_sim no)
+		(at 17.272 27.94 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "d373d715-49e8-4ca7-a8ca-531d0c39aed2")
+	)
+	(text "ESD Protection (U2)"
+		(exclude_from_sim no)
+		(at 184.658 50.8 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3f79196-c8f4-4aa0-9df8-2339b870cef0")
+	)
+	(text "Decoupling 4.7uF + 100nF"
+		(exclude_from_sim no)
+		(at 56.134 142.872 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "eb4e334b-8a72-4655-b8d2-3692eacbf8ba")
+	)
+	(text "USB-C Connector (J1)"
+		(exclude_from_sim no)
+		(at 56.388 50.292 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa065e50-2eeb-451f-9d89-0c31c2c5f54d")
+	)
+	(text "Edge-mount, 16-pin"
+		(exclude_from_sim no)
+		(at 56.388 57.292 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa59cc03-a5fd-4a77-9fc4-0574f994de4e")
+	)
+	(text "3 pF typical capacitance"
+		(exclude_from_sim no)
+		(at 184.658 65.8 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff090473-2b21-4685-bbdf-0f537f5f5dd1")
+	)
+)
