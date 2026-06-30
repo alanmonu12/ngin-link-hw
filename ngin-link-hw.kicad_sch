@@ -64,17 +64,6 @@
 		)
 		(uuid "20c7b18e-8d86-4477-8028-1036a2431047")
 	)
-	(text "ARR"
-		(exclude_from_sim no)
-		(at 505.054 47.37 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-			)
-			(justify left bottom)
-		)
-		(uuid "20d2a537-2861-4112-8d73-2564f174636e")
-	)
 	(text "sch/10_usb.kicad_sch"
 		(exclude_from_sim no)
 		(at 41.148 115.824 0)
@@ -132,7 +121,7 @@
 	)
 	(text "Company:"
 		(exclude_from_sim no)
-		(at 17.648 81.23 0)
+		(at 18.41 81.23 0)
 		(effects
 			(font
 				(size 2 2)
@@ -143,7 +132,7 @@
 	)
 	(text "CERN-OHL-S 2.0"
 		(exclude_from_sim no)
-		(at 72.648 85.294 0)
+		(at 73.41 85.294 0)
 		(effects
 			(font
 				(size 2 2)
@@ -220,7 +209,7 @@
 	)
 	(text "Author:"
 		(exclude_from_sim no)
-		(at 17.14 89.358 0)
+		(at 18.41 89.358 0)
 		(effects
 			(font
 				(size 2 2)
@@ -251,17 +240,6 @@
 		)
 		(uuid "6e87db60-6a5f-411a-9789-9025cd396835")
 	)
-	(text "Author"
-		(exclude_from_sim no)
-		(at 505.054 39.37 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-			)
-			(justify left bottom)
-		)
-		(uuid "74cff18c-6281-4a92-92b2-451da456093d")
-	)
 	(text "3"
 		(exclude_from_sim no)
 		(at 24.638 115.824 0)
@@ -275,7 +253,7 @@
 	)
 	(text "License:"
 		(exclude_from_sim no)
-		(at 17.648 85.294 0)
+		(at 18.41 85.294 0)
 		(effects
 			(font
 				(size 2 2)
@@ -308,7 +286,7 @@
 	)
 	(text "ARR"
 		(exclude_from_sim no)
-		(at 72.14 89.358 0)
+		(at 73.41 89.358 0)
 		(effects
 			(font
 				(size 2 2)
@@ -341,7 +319,7 @@
 	)
 	(text "Revision:"
 		(exclude_from_sim no)
-		(at 18.664 69.292 0)
+		(at 18.41 69.292 0)
 		(effects
 			(font
 				(size 2 2)
@@ -440,7 +418,7 @@
 	)
 	(text "Ngin performance"
 		(exclude_from_sim no)
-		(at 72.648 81.23 0)
+		(at 73.41 81.23 0)
 		(effects
 			(font
 				(size 2 2)
@@ -484,7 +462,7 @@
 	)
 	(text "Status:"
 		(exclude_from_sim no)
-		(at 18.664 77.166 0)
+		(at 18.41 77.166 0)
 		(effects
 			(font
 				(size 2 2)
@@ -517,7 +495,7 @@
 	)
 	(text "2026-06-28"
 		(exclude_from_sim no)
-		(at 73.664 73.61 0)
+		(at 73.41 73.61 0)
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -539,7 +517,7 @@
 	)
 	(text "A"
 		(exclude_from_sim no)
-		(at 73.664 69.292 0)
+		(at 73.41 69.292 0)
 		(effects
 			(font
 				(size 2 2)
@@ -570,9 +548,9 @@
 		)
 		(uuid "edb0b05d-e432-4c63-8b5a-8f6914de924a")
 	)
-	(text "Prototype"
+	(text "Draft"
 		(exclude_from_sim no)
-		(at 73.664 77.166 0)
+		(at 73.41 77.166 0)
 		(effects
 			(font
 				(size 2 2)
@@ -583,7 +561,7 @@
 	)
 	(text "Date:"
 		(exclude_from_sim no)
-		(at 18.664 73.61 0)
+		(at 18.41 73.61 0)
 		(effects
 			(font
 				(size 2 2)
