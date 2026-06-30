@@ -282,7 +282,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "${KIPRJMOD}/sch/30_mcu.kicad_sch"
+		(property "Sheetfile" "30_mcu.kicad_sch"
 			(at 138.43 127.5846 0)
 			(hide yes)
 			(show_name no)
@@ -329,7 +329,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "${KIPRJMOD}/sch/40_can.kicad_sch"
+		(property "Sheetfile" "40_can.kicad_sch"
 			(at 203.2 99.6446 0)
 			(hide yes)
 			(show_name no)
@@ -376,7 +376,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "${KIPRJMOD}/sch/20_power.kicad_sch"
+		(property "Sheetfile" "20_power.kicad_sch"
 			(at 46.99 67.8946 0)
 			(hide yes)
 			(show_name no)
@@ -423,7 +423,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "${KIPRJMOD}/sch/10_usb.kicad_sch"
+		(property "Sheetfile" "10_usb.kicad_sch"
 			(at 72.39 119.9646 0)
 			(hide yes)
 			(show_name no)
