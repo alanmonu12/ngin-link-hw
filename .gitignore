@@ -12,6 +12,7 @@
 *.kicad_pcb-bak2
 *.kicad_sch-bak2
 .history
+ngin-link-hw-backups
 
 # Auto-save files
 _autosave-*
